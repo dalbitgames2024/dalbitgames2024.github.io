@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정리냥 · Tidy Paws</title>
+<meta name="description" content="고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐. A cozy cat puzzle about pushing boxes and tidying up.">
+<meta property="og:title" content="정리냥 · Tidy Paws">
+<meta property="og:description" content="고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐">
+<meta property="og:image" content="https://dalbitgames2024.github.io/assets/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script>
+window.I18N = {
+  ko: {
+    "page.title": "정리냥 · Tidy Paws",
+    "studio": "달빛 게임즈",
+    "name": "정리냥",
+    "tag": "고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐",
+    "soon": "Google Play 출시 예정",
+    "lead": "상자는 밀 수만 있고 당길 수는 없어요. 어떤 순서로 밀지 잠깐 생각해 보고, 막히면 되돌리면 돼요. 쉬는 시간에 한 판씩 천천히 즐겨 주세요.",
+    "shots.title": "이렇게 놀아요",
+    "f.title": "정리냥의 즐거움",
+    "f1.t": "스테이지 100개", "f1.d": "쉬운 판부터 조금씩 어려워져요.",
+    "f2.t": "되돌리기는 몇 번이든", "f2.d": "잘못 밀어도 괜찮아요. 한 수씩 되돌려요.",
+    "f3.t": "붕어빵이 톡", "f3.d": "상자를 자리에 넣으면 붕어빵이 나와요.",
+    "f4.t": "광고 없이, 오프라인으로", "f4.d": "인터넷이 없어도 할 수 있어요.",
+    "cats.title": "고양이 옷장",
+    "cats.sub": "별과 붕어빵을 모아 고양이 옷을 갈아입혀요.",
+    "shot1": "상자를 미는 고양이", "shot2": "상자를 넣으면 붕어빵", "shot3": "클리어", "shot4": "고양이 옷장", "shot5": "조는 고양이",
+    "back": "← 달빛 게임즈",
+    "privacy": "개인정보처리방침",
+    "contact": "문의"
+  },
+  en: {
+    "page.title": "Tidy Paws · Cozy Cat Box Puzzle",
+    "studio": "Dalbit Games",
+    "name": "Tidy Paws",
+    "tag": "A cozy cat puzzle about pushing boxes and tidying up",
+    "soon": "Coming soon to Google Play",
+    "lead": "Boxes can only be pushed, not pulled. Take a moment to think about the order, and if you get stuck, just undo. Enjoy it one level at a time, whenever you need a little break.",
+    "shots.title": "How it plays",
+    "f.title": "Why you'll love it",
+    "f1.t": "100 levels", "f1.d": "They start easy and slowly get harder.",
+    "f2.t": "Undo as much as you like", "f2.d": "Made a mistake? Take it back, one move at a time.",
+    "f3.t": "Pop! A taiyaki", "f3.d": "A fish-shaped pastry pops out when a box reaches its spot.",
+    "f4.t": "No ads, works offline", "f4.d": "Play anywhere, no internet needed.",
+    "cats.title": "Cat wardrobe",
+    "cats.sub": "Collect stars and taiyaki to dress up your cat.",
+    "shot1": "A cat pushing a box", "shot2": "A taiyaki for every box", "shot3": "Level clear", "shot4": "Cat wardrobe", "shot5": "A dozing cat",
+    "back": "← Dalbit Games",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  ja: {
+    "page.title": "Tidy Paws · ねこの箱おしパズル",
+    "studio": "Dalbit Games",
+    "name": "Tidy Paws",
+    "tag": "ねこが箱をおして倉庫をかたづける、のんびりパズル",
+    "soon": "Google Play で近日公開",
+    "lead": "箱はおすことしかできず、引くことはできません。どの順番でおすか少し考えて、つまったら一手もどせば大丈夫。ひと休みの時間に、1ステージずつのんびり楽しんでください。",
+    "shots.title": "あそびかた",
+    "f.title": "Tidy Paws の楽しさ",
+    "f1.t": "100ステージ", "f1.d": "かんたんな面から少しずつむずかしくなります。",
+    "f2.t": "一手もどすは何回でも", "f2.d": "まちがえても大丈夫。一手ずつもどせます。",
+    "f3.t": "たい焼きがポン", "f3.d": "箱を置くと、たい焼きが出てきます。",
+    "f4.t": "広告なし・オフライン", "f4.d": "インターネットがなくても遊べます。",
+    "cats.title": "ねこのきせかえ",
+    "cats.sub": "星とたい焼きを集めて、ねこの服を着せかえよう。",
+    "shot1": "箱をおすねこ", "shot2": "箱を置くとたい焼き", "shot3": "クリア", "shot4": "きせかえ", "shot5": "うとうとするねこ",
+    "back": "← Dalbit Games",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問い合わせ"
+  }
+};
+</script>
+<script src="../assets/i18n.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../"><span class="moon" aria-hidden="true"></span><span data-i18n="studio">달빛 게임즈</span></a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="art"><img src="../assets/hero.jpg" alt="" width="1600" height="800"></div>
+    <div class="title">
+      <img class="icon" src="../assets/icon.png" alt="" width="96" height="96">
+      <h1 data-i18n="name">정리냥</h1>
+    </div>
+    <p class="tag" data-i18n="tag">고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐</p>
+    <div class="cta">
+      <!-- 출시하면 aria-disabled를 빼고 href="https://play.google.com/store/apps/details?id=com.DalbitGames.pushbox"로 바꾼다 -->
+      <span class="btn" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .5.5.8 1 .6l15.6-9a.7.7 0 0 0 0-1.2L5 2.2c-.5-.2-1 .1-1 .6Z"/></svg><span data-i18n="soon">Google Play 출시 예정</span></span>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="lead" data-i18n="lead">상자는 밀 수만 있고 당길 수는 없어요. 어떤 순서로 밀지 잠깐 생각해 보고, 막히면 되돌리면 돼요. 쉬는 시간에 한 판씩 천천히 즐겨 주세요.</p>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <h2 data-i18n="shots.title">이렇게 놀아요</h2>
+    <div class="shots">
+      <img src="../assets/shots/ko/1.jpg" data-i18n-src="../assets/shots/{lang}/1.jpg" data-i18n-alt="shot1" alt="상자를 미는 고양이" width="540" height="960" loading="lazy">
+      <img src="../assets/shots/ko/2.jpg" data-i18n-src="../assets/shots/{lang}/2.jpg" data-i18n-alt="shot2" alt="상자를 넣으면 붕어빵" width="540" height="960" loading="lazy">
+      <img src="../assets/shots/ko/3.jpg" data-i18n-src="../assets/shots/{lang}/3.jpg" data-i18n-alt="shot3" alt="클리어" width="540" height="960" loading="lazy">
+      <img src="../assets/shots/ko/4.jpg" data-i18n-src="../assets/shots/{lang}/4.jpg" data-i18n-alt="shot4" alt="고양이 옷장" width="540" height="960" loading="lazy">
+      <img src="../assets/shots/ko/5.jpg" data-i18n-src="../assets/shots/{lang}/5.jpg" data-i18n-alt="shot5" alt="조는 고양이" width="540" height="960" loading="lazy">
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <h2 data-i18n="f.title">정리냥의 즐거움</h2>
+    <div class="features">
+      <div class="feature"><div class="num">100</div><h3 data-i18n="f1.t">스테이지 100개</h3><p data-i18n="f1.d">쉬운 판부터 조금씩 어려워져요.</p></div>
+      <div class="feature"><div class="num">↶</div><h3 data-i18n="f2.t">되돌리기는 몇 번이든</h3><p data-i18n="f2.d">잘못 밀어도 괜찮아요. 한 수씩 되돌려요.</p></div>
+      <div class="feature"><div class="num">+1</div><h3 data-i18n="f3.t">붕어빵이 톡</h3><p data-i18n="f3.d">상자를 자리에 넣으면 붕어빵이 나와요.</p></div>
+      <div class="feature"><div class="num">✈</div><h3 data-i18n="f4.t">광고 없이, 오프라인으로</h3><p data-i18n="f4.d">인터넷이 없어도 할 수 있어요.</p></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <h2 data-i18n="cats.title">고양이 옷장</h2>
+    <p class="sub" data-i18n="cats.sub">별과 붕어빵을 모아 고양이 옷을 갈아입혀요.</p>
+    <div class="cats">
+      <img src="../assets/cats/base.png" alt="" loading="lazy">
+      <img src="../assets/cats/frog.png" alt="" loading="lazy">
+      <img src="../assets/cats/bread.png" alt="" loading="lazy">
+      <img src="../assets/cats/strawberry.png" alt="" loading="lazy">
+      <img src="../assets/cats/banana.png" alt="" loading="lazy">
+      <img src="../assets/cats/dino.png" alt="" loading="lazy">
+      <img src="../assets/cats/shark.png" alt="" loading="lazy">
+      <img src="../assets/cats/pudding.png" alt="" loading="lazy">
+      <img src="../assets/cats/hanbok.png" alt="" loading="lazy">
+      <img src="../assets/cats/tangerine.png" alt="" loading="lazy">
+      <img src="../assets/cats/chick.png" alt="" loading="lazy">
+      <img src="../assets/cats/wizard.png" alt="" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="../" data-i18n="back">← 달빛 게임즈</a>
+    <span><a href="privacy/" data-i18n="privacy">개인정보처리방침</a> · <span data-i18n="contact">문의</span> <a href="mailto:dalbitgames2024@gmail.com">dalbitgames2024@gmail.com</a></span>
+  </div>
+</footer>
+</body>
+</html>

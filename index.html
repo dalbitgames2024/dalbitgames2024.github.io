@@ -3,22 +3,145 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DalbitGames</title>
-<style>
-  :root { color-scheme: light dark; --fg: #3d2a1e; --bg: #fffaf3; --accent: #c0663f; }
-  @media (prefers-color-scheme: dark) { :root { --fg: #f1e6da; --bg: #1f1915; --accent: #e89a72; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
-  a { color: var(--accent); }
-</style>
+<title>달빛 게임즈 · Dalbit Games</title>
+<meta name="description" content="달빛 게임즈는 작고 귀여운 게임을 만듭니다. 정리냥(Tidy Paws), 운빨망겜(Pure Luck), 난다고래.">
+<meta property="og:title" content="달빛 게임즈 · Dalbit Games">
+<meta property="og:description" content="작고 귀여운 게임을 만듭니다.">
+<meta property="og:image" content="https://dalbitgames2024.github.io/assets/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+window.I18N = {
+  ko: {
+    "page.title": "달빛 게임즈 · Dalbit Games",
+    "studio": "달빛 게임즈",
+    "intro.title": "작고 귀여운 게임을 만들어요",
+    "intro.body": "쉬는 시간에 가볍게 즐길 수 있는 게임을 만드는 작은 개발팀입니다.",
+    "soon": "출시 예정",
+    "tidy.name": "정리냥",
+    "tidy.desc": "고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐. 스테이지 100개, 광고 없음.",
+    "tidy.more": "자세히 보기",
+    "luck.name": "운빨망겜",
+    "luck.desc": "버튼 하나로 뽑고 모으고, 전 세계와 운을 겨뤄요. 오늘의 운세와 행운 부스트까지.",
+    "whale.name": "난다고래",
+    "whale.desc": "귀여운 고래가 장애물을 피해 날아오르며 코인을 모아 꾸미는 간단한 게임.",
+    "play": "Google Play",
+    "privacy": "개인정보처리방침",
+    "contact": "문의"
+  },
+  en: {
+    "page.title": "Dalbit Games",
+    "studio": "Dalbit Games",
+    "intro.title": "We make small, cozy games",
+    "intro.body": "A tiny team making games you can enjoy on a short break.",
+    "soon": "Coming soon",
+    "tidy.name": "Tidy Paws",
+    "tidy.desc": "A cozy cat puzzle about pushing boxes and tidying up a warehouse. 100 levels, no ads.",
+    "tidy.more": "Learn more",
+    "luck.name": "Pure Luck",
+    "luck.desc": "Draw and collect with one tap, then test your luck against the whole world.",
+    "whale.name": "난다고래",
+    "whale.desc": "A simple game where a cute whale flies past obstacles and collects coins to decorate.",
+    "play": "Google Play",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  ja: {
+    "page.title": "Dalbit Games",
+    "studio": "Dalbit Games",
+    "intro.title": "小さくてかわいいゲームを作っています",
+    "intro.body": "ひと休みの時間に気軽に遊べるゲームを作る、小さな開発チームです。",
+    "soon": "近日公開",
+    "tidy.name": "Tidy Paws",
+    "tidy.desc": "ねこが箱をおして倉庫をかたづける、のんびりパズル。100ステージ、広告なし。",
+    "tidy.more": "くわしく見る",
+    "luck.name": "Pure Luck",
+    "luck.desc": "ボタンひとつでガチャを引いて集めて、世界中と運をきそおう。今日の運勢と幸運ブーストも。",
+    "whale.name": "난다고래",
+    "whale.desc": "かわいいクジラが障害物をよけて飛び、コインを集めて飾りつけるシンプルなゲーム。",
+    "play": "Google Play",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問い合わせ"
+  }
+};
+</script>
+<script src="assets/i18n.js" defer></script>
 </head>
 <body>
-<main>
-<h1>DalbitGames</h1>
-<ul>
-  <li>정리냥 (Tidy Paws) — <a href="tidy-paws/privacy/">개인정보처리방침 / Privacy Policy</a></li>
-</ul>
-<p>Contact: <a href="mailto:dalbitgames2024@gmail.com">dalbitgames2024@gmail.com</a></p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="moon" aria-hidden="true"></span><span data-i18n="studio">달빛 게임즈</span></a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <h1 data-i18n="intro.title">작고 귀여운 게임을 만들어요</h1>
+    <p data-i18n="intro.body">쉬는 시간에 가볍게 즐길 수 있는 게임을 만드는 작은 개발팀입니다.</p>
+  </section>
+
+  <section class="games" aria-label="Games">
+    <article class="game">
+      <a href="tidy-paws/"><img class="banner" src="assets/og.jpg" alt="" width="1024" height="500"></a>
+      <div class="body">
+        <div class="head">
+          <img class="icon" src="assets/icon.png" alt="" width="72" height="72">
+          <h3><span data-i18n="tidy.name">정리냥</span> <span class="badge" data-i18n="soon">출시 예정</span></h3>
+        </div>
+        <p data-i18n="tidy.desc">고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐. 스테이지 100개, 광고 없음.</p>
+        <div class="links">
+          <a class="btn" href="tidy-paws/" data-i18n="tidy.more">자세히 보기</a>
+          <a class="small" href="tidy-paws/privacy/" data-i18n="privacy">개인정보처리방침</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="game">
+      <a href="https://play.google.com/store/apps/details?id=com.EHUGames.LuckTrash"><img class="banner" src="assets/games/luck-banner-ko.jpg" data-i18n-src="assets/games/luck-banner-{lang}.jpg" data-i18n-langs="ko,en" alt="" width="1024" height="500"></a>
+      <div class="body">
+        <div class="head">
+          <img class="icon" src="assets/games/luck-icon.png" alt="" width="72" height="72">
+          <h3 data-i18n="luck.name">운빨망겜</h3>
+        </div>
+        <p data-i18n="luck.desc">버튼 하나로 뽑고 모으고, 전 세계와 운을 겨뤄요. 오늘의 운세와 행운 부스트까지.</p>
+        <div class="links">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.EHUGames.LuckTrash"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .5.5.8 1 .6l15.6-9a.7.7 0 0 0 0-1.2L5 2.2c-.5-.2-1 .1-1 .6Z"/></svg><span data-i18n="play">Google Play</span></a>
+          <a class="small" href="https://sites.google.com/view/luckytrash-privacy/%ED%99%88" data-i18n="privacy">개인정보처리방침</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="game">
+      <a href="https://play.google.com/store/apps/details?id=com.EHUGames.FlappyWhale"><img class="banner" src="assets/games/whale-banner.jpg" alt="" width="1024" height="500"></a>
+      <div class="body">
+        <div class="head">
+          <img class="icon" src="assets/games/whale-icon.png" alt="" width="72" height="72">
+          <h3 data-i18n="whale.name">난다고래</h3>
+        </div>
+        <p data-i18n="whale.desc">귀여운 고래가 장애물을 피해 날아오르며 코인을 모아 꾸미는 간단한 게임.</p>
+        <div class="links">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.EHUGames.FlappyWhale"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .5.5.8 1 .6l15.6-9a.7.7 0 0 0 0-1.2L5 2.2c-.5-.2-1 .1-1 .6Z"/></svg><span data-i18n="play">Google Play</span></a>
+          <a class="small" href="https://sites.google.com/view/flappywhale/%ED%99%88" data-i18n="privacy">개인정보처리방침</a>
+        </div>
+      </div>
+    </article>
+  </section>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 <span data-i18n="studio">달빛 게임즈</span></span>
+    <span><span data-i18n="contact">문의</span> · <a href="mailto:dalbitgames2024@gmail.com">dalbitgames2024@gmail.com</a></span>
+  </div>
+</footer>
 </body>
 </html>
