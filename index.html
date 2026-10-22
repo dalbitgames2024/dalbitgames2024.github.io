@@ -21,14 +21,14 @@ window.I18N = {
     "studio": "달빛 게임즈",
     "intro.title": "작고 귀여운 게임을 만들어요",
     "intro.body": "쉬는 시간에 가볍게 즐길 수 있는 게임을 만드는 작은 개발팀입니다.",
-    "soon": "출시 예정",
     "tidy.name": "정리냥",
     "tidy.desc": "고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐. 스테이지 100개, 광고 없음.",
     "tidy.more": "자세히 보기",
     "luck.name": "운빨망겜",
     "luck.desc": "버튼 하나로 뽑고 모으고, 전 세계와 운을 겨뤄요. 오늘의 운세와 행운 부스트까지.",
     "whale.name": "난다고래",
-    "whale.desc": "귀여운 고래가 장애물을 피해 날아오르며 코인을 모아 꾸미는 간단한 게임.",
+    "whale.desc": "톡 치면 날아오르는 고래와 하늘 여행. 전 세계 고래들과 레이스하고 스킨 100종을 모아요.",
+    "whale.more": "자세히 보기",
     "play": "Google Play",
     "privacy": "개인정보처리방침",
     "contact": "문의"
@@ -38,14 +38,14 @@ window.I18N = {
     "studio": "Dalbit Games",
     "intro.title": "We make small, cozy games",
     "intro.body": "A tiny team making games you can enjoy on a short break.",
-    "soon": "Coming soon",
     "tidy.name": "Tidy Paws",
     "tidy.desc": "A cozy cat puzzle about pushing boxes and tidying up a warehouse. 100 levels, no ads.",
     "tidy.more": "Learn more",
     "luck.name": "Pure Luck",
     "luck.desc": "Draw and collect with one tap, then test your luck against the whole world.",
-    "whale.name": "난다고래",
-    "whale.desc": "A simple game where a cute whale flies past obstacles and collects coins to decorate.",
+    "whale.name": "Flappy Whale",
+    "whale.desc": "Tap to fly across the sky. Race whales from around the world and collect 100 cute skins.",
+    "whale.more": "Learn more",
     "play": "Google Play",
     "privacy": "Privacy Policy",
     "contact": "Contact"
@@ -55,14 +55,14 @@ window.I18N = {
     "studio": "Dalbit Games",
     "intro.title": "小さくてかわいいゲームを作っています",
     "intro.body": "ひと休みの時間に気軽に遊べるゲームを作る、小さな開発チームです。",
-    "soon": "近日公開",
     "tidy.name": "Tidy Paws",
     "tidy.desc": "ねこが箱をおして倉庫をかたづける、のんびりパズル。100ステージ、広告なし。",
     "tidy.more": "くわしく見る",
     "luck.name": "Pure Luck",
     "luck.desc": "ボタンひとつでガチャを引いて集めて、世界中と運をきそおう。今日の運勢と幸運ブーストも。",
-    "whale.name": "난다고래",
-    "whale.desc": "かわいいクジラが障害物をよけて飛び、コインを集めて飾りつけるシンプルなゲーム。",
+    "whale.name": "Flappy Whale",
+    "whale.desc": "タップで飛び上がるクジラと空の旅。世界中のクジラとレースして、スキン100種類を集めよう。",
+    "whale.more": "くわしく見る",
     "play": "Google Play",
     "privacy": "プライバシーポリシー",
     "contact": "お問い合わせ"
@@ -95,11 +95,12 @@ window.I18N = {
       <div class="body">
         <div class="head">
           <img class="icon" src="assets/icon.png" alt="" width="72" height="72">
-          <h3><span data-i18n="tidy.name">정리냥</span> <span class="badge" data-i18n="soon">출시 예정</span></h3>
+          <h3 data-i18n="tidy.name">정리냥</h3>
         </div>
         <p data-i18n="tidy.desc">고양이가 상자를 밀어 창고를 정리하는 잔잔한 퍼즐. 스테이지 100개, 광고 없음.</p>
         <div class="links">
-          <a class="btn" href="tidy-paws/" data-i18n="tidy.more">자세히 보기</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.DalbitGames.pushbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .5.5.8 1 .6l15.6-9a.7.7 0 0 0 0-1.2L5 2.2c-.5-.2-1 .1-1 .6Z"/></svg><span data-i18n="play">Google Play</span></a>
+          <a class="small" href="tidy-paws/" data-i18n="tidy.more">자세히 보기</a>
           <a class="small" href="tidy-paws/privacy/" data-i18n="privacy">개인정보처리방침</a>
         </div>
       </div>
@@ -115,22 +116,23 @@ window.I18N = {
         <p data-i18n="luck.desc">버튼 하나로 뽑고 모으고, 전 세계와 운을 겨뤄요. 오늘의 운세와 행운 부스트까지.</p>
         <div class="links">
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.EHUGames.LuckTrash"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .5.5.8 1 .6l15.6-9a.7.7 0 0 0 0-1.2L5 2.2c-.5-.2-1 .1-1 .6Z"/></svg><span data-i18n="play">Google Play</span></a>
-          <a class="small" href="https://sites.google.com/view/luckytrash-privacy/%ED%99%88" data-i18n="privacy">개인정보처리방침</a>
+          <a class="small" href="pure-luck/privacy/" data-i18n="privacy">개인정보처리방침</a>
         </div>
       </div>
     </article>
 
     <article class="game">
-      <a href="https://play.google.com/store/apps/details?id=com.EHUGames.FlappyWhale"><img class="banner" src="assets/games/whale-banner.jpg" alt="" width="1024" height="500"></a>
+      <a href="flappy-whale/"><img class="banner" src="assets/games/whale-banner-ko.jpg" data-i18n-src="assets/games/whale-banner-{lang}.jpg" data-i18n-langs="ko,en" alt="" width="1024" height="500"></a>
       <div class="body">
         <div class="head">
           <img class="icon" src="assets/games/whale-icon.png" alt="" width="72" height="72">
           <h3 data-i18n="whale.name">난다고래</h3>
         </div>
-        <p data-i18n="whale.desc">귀여운 고래가 장애물을 피해 날아오르며 코인을 모아 꾸미는 간단한 게임.</p>
+        <p data-i18n="whale.desc">톡 치면 날아오르는 고래와 하늘 여행. 전 세계 고래들과 레이스하고 스킨 100종을 모아요.</p>
         <div class="links">
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.EHUGames.FlappyWhale"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .5.5.8 1 .6l15.6-9a.7.7 0 0 0 0-1.2L5 2.2c-.5-.2-1 .1-1 .6Z"/></svg><span data-i18n="play">Google Play</span></a>
-          <a class="small" href="https://sites.google.com/view/flappywhale/%ED%99%88" data-i18n="privacy">개인정보처리방침</a>
+          <a class="small" href="flappy-whale/" data-i18n="whale.more">자세히 보기</a>
+          <a class="small" href="flappy-whale/privacy/" data-i18n="privacy">개인정보처리방침</a>
         </div>
       </div>
     </article>
