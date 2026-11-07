@@ -48,7 +48,7 @@
 <p><b>오류 보고</b>: 오류를 찾아 고치기 위해 Google의 Firebase Crashlytics를 사용합니다. 앱이 비정상 종료되거나 오류가 나면 오류 기록(오류가 난 코드 위치와 당시 앱 상태), 기기 정보(제조사, 기기 모델, OS 버전, 네트워크 종류 등), 앱 버전, 앱 사용 시점, Crashlytics 설치 ID가 Google로 전송됩니다.</p>
 <p>이름, 이메일, Play 게임즈 계정처럼 이용자를 직접 알아볼 수 있는 정보는 분석과 오류 보고로 보내지 않습니다. 이 정보는 게임 개선과 오류 수정, 구매 현황 확인에만 사용하며, 판매하지 않습니다.</p>
 <p><b>처리 근거</b>: 위 정보는 게임을 개선하고 오류를 고치려는 개발자의 정당한 이익에 근거해 처리합니다.</p>
-<p><b>자동 수집과 거부 방법</b>: 위 정보는 앱 시작 공지에서 [동의]를 누른 뒤 게임을 이용하는 동안 앱에 포함된 Firebase가 자동으로 수집합니다. 어느 나라에서든 설정의 [분석·오류 보고]를 끄면 분석과 오류 보고 전송이 모두 멈추고, 끄더라도 게임 이용에는 제한이 없습니다. 다시 켜는 것도 언제든 할 수 있습니다.</p>
+<p><b>자동 수집과 거부 방법</b>: 위 정보는 앱 시작 공지에서 [동의]를 누른 뒤 게임을 이용하는 동안 앱에 포함된 Firebase가 자동으로 수집합니다. 어느 나라에서든 설정의 [분석·오류 보고]를 끄면 분석과 오류 보고 전송이 모두 멈추고, 끄더라도 게임 이용에는 제한이 없습니다. 다시 켜는 것도 언제든 할 수 있습니다. 다만 동의 전이나 꺼 둔 동안 기기에 남은 오류 기록은 수집을 켤 때 전송될 수 있습니다.</p>
 <p><b>국외 처리</b>: 이 정보는 미국 등 Google이 서버를 운영하는 나라에서 처리될 수 있습니다.</p>
 
 <h2>5. 문의</h2>
@@ -93,7 +93,7 @@
 <p><b>Error reporting</b>: We use Google's Firebase Crashlytics to find and fix errors. When the app crashes or an error occurs, the error record (where in the code it happened and the app state at the time), device information (manufacturer, device model, OS version, network type, etc.), app version, when the app was in use and a Crashlytics installation ID are sent to Google.</p>
 <p>We do not send information that directly identifies you, such as your name, email or Play Games account, through analytics or error reporting. We use this information only to improve the Game, fix errors and check purchase performance, and we do not sell it.</p>
 <p><b>Legal basis</b>: We process this information based on our legitimate interest in improving the Game and fixing errors.</p>
-<p><b>Automatic collection and how to opt out</b>: This information is collected automatically by Firebase, which is built into the app, while you use the Game after tapping [Agree] on the startup notice. In any country, you can turn off [Analytics &amp; Error Reports] in Settings to stop both analytics and error reporting. Turning it off does not limit the Game in any way, and you can turn it back on at any time.</p>
+<p><b>Automatic collection and how to opt out</b>: This information is collected automatically by Firebase, which is built into the app, while you use the Game after tapping [Agree] on the startup notice. In any country, you can turn off [Analytics &amp; Error Reports] in Settings to stop both analytics and error reporting. Turning it off does not limit the Game in any way, and you can turn it back on at any time. However, error records left on your device before you agree or while it is off may be sent when collection is turned on.</p>
 <p><b>Processing outside your country</b>: This information may be processed in the United States and other countries where Google operates servers.</p>
 
 <h2>5. Support</h2>
@@ -138,7 +138,7 @@
 <p><b>エラー報告</b>：エラーを見つけて修正するため、Google の Firebase Crashlytics を使用します。アプリが異常終了したりエラーが起きたりすると、エラーの記録（エラーが起きたコードの位置と当時のアプリの状態）、端末情報（メーカー、端末モデル、OS バージョン、ネットワークの種類など）、アプリのバージョン、アプリの利用時刻、Crashlytics インストール ID が Google に送信されます。</p>
 <p>氏名、メールアドレス、Play ゲームのアカウントなど、利用者を直接特定できる情報は、分析とエラー報告では送信しません。これらの情報は本ゲームの改善、エラーの修正、購入状況の確認にのみ使用し、販売することはありません。</p>
 <p><b>処理の根拠</b>：これらの情報は、本ゲームを改善しエラーを修正するという開発者の正当な利益に基づいて処理します。</p>
-<p><b>自動収集と拒否の方法</b>：これらの情報は、起動時のお知らせで［同意］をタップした後、本ゲームの利用中にアプリに組み込まれた Firebase が自動で収集します。どの国でも、設定の［分析・エラー報告］をオフにすると分析とエラー報告の送信がすべて止まります。オフにしても本ゲームの利用に制限はなく、いつでもオンに戻せます。</p>
+<p><b>自動収集と拒否の方法</b>：これらの情報は、起動時のお知らせで［同意］をタップした後、本ゲームの利用中にアプリに組み込まれた Firebase が自動で収集します。どの国でも、設定の［分析・エラー報告］をオフにすると分析とエラー報告の送信がすべて止まります。オフにしても本ゲームの利用に制限はなく、いつでもオンに戻せます。ただし、同意前やオフの間に端末に残ったエラーの記録は、収集をオンにしたときに送信されることがあります。</p>
 <p><b>国外での処理</b>：これらの情報は、米国など Google がサーバーを運営する国で処理される場合があります。</p>
 
 <h2>5. お問い合わせ機能</h2>
